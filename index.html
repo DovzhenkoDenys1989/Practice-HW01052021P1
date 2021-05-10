@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./assets/css/reset.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./assets/css/styles.css" />
+    <script defer src="./assets/js/utils.js"></script>
+    <script defer src="./assets/js/data.js"></script>
+    <script defer src="./assets/js/index.js"></script>
+  </head>
+  <body>
+    <header class="header">
+      <div class="headerWrapper">
+        <div class="logoContainer">FreshNews</div>
+        <form class="searchForm">
+          <input type="search" class="searchInput" placeholder="search" />
+        </form>
+      </div>
+    </header>
+    <section class="newsContainer">
+      <h1 class="newsHeading">News</h1>
+      <button class="addNewPostButton">
+        <i class="fas fa-plus addNewPostIcon"></i>
+      </button>
+      <article class="addNewPostContainer" hidden>
+        <h2>Add new post</h2>
+        <form class="newPostForm">
+          <label>
+            <span class="formFieldName">Post title</span>
+            <input class="formField" name="newPostTitle" type="text">
+          </label>
+          <label>
+            <span class="formFieldName">Post Content</span>
+            <textarea class="formField" name="newPostContent" rows="10"></textarea>
+          </label>
+          <div class="formButtonsContainer">
+            <button type="submit" class="formButton">Create</button>
+            <button type="reset" class="formButton">Cancel</button>
+          </div>
+        </form>
+      </article>
+      <div class="postsWrapper">
+        <article class="post">
+          <header class="postHeader">
+            <h2 class="postTitle">Lorem ipsum dolor sit amet.</h2>
+            <div class="postCreationDate">01.01.2021</div>
+          </header>
+          <p class="postContent">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Amet sunt
+            facilis a ad, dolor nihil deleniti! Dicta eos aut corrupti,
+            molestias iure porro suscipit debitis voluptatum atque alias unde
+            eligendi id, esse nihil nostrum nisi recusandae sequi vitae
+            consequatur. Enim impedit at earum iusto quisquam suscipit fuga
+            reiciendis molestias labore.
+          </p>
+        </article>
+      </div>
+    </section>
+  </body>
+</html>
