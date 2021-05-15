@@ -2,7 +2,6 @@
 
 const postsWrapper = document.querySelector(".postsWrapper");
 
-
 renderPosts(postsWrapper, posts);
 
 function renderPosts(container, posts) {
@@ -15,5 +14,3 @@ function clearChildren(container) {
     container.firstChild.remove();
   }
 }
-
-

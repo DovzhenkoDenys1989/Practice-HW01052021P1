@@ -1,16 +1,159 @@
-.newPostForm{
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(250, 235, 215);
+}
+
+.header {
+  background-color: rgb(242, 211, 96);
+}
+
+.headerWrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 70px;
+  margin: 0px 100px;
+}
+
+.logoContainer {
+  font-size: 30px;
+  font-weight: bold;
+  font-family: sans-serif;
+}
+
+.searchInput {
+  height: 25px;
+  padding: 2px;
+  border-radius: 3px;
+  border: 1px solid grey;
+  -webkit-box-shadow: 0px 0px 3px 3px rgba(84, 88, 91, 0.54);
+  -moz-box-shadow: 0px 0px 3px 3px rgba(84, 88, 91, 0.54);
+  box-shadow: 0px 0px 3px 3px rgba(84, 88, 91, 0.54);
+}
+
+.newsHeading {
+  font-size: 35px;
+  font-weight: bold;
+  font-family: sans-serif;
+  text-align: center;
+  padding: 20px 0px;
+}
+
+.addNewPostContainer {
+  position: fixed;
+  left: 0;
+  right: 0;
+  background-color: white;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  border: 1px solid gray;
+  border-radius: 3px;
+  -webkit-box-shadow: 9px 9px 18px -12px rgba(13, 13, 13, 1);
+  -moz-box-shadow: 9px 9px 18px -12px rgba(13, 13, 13, 1);
+  box-shadow: 9px 9px 18px -12px rgba(13, 13, 13, 1);
+}
+
+.addNewPostContainer > h2 {
+  font-size: 25px;
+  font-weight: bold;
+  font-family: sans-serif;
+  text-align: center;
+  padding: 20px 0px;
+}
+
+.formFieldName {
+  display: block;
+  padding: 20px 0 5px;
+  font-size: 20px;
+  font-weight: bold;
+  font-family: sans-serif;
+}
+
+.formField {
+  width: 100%;
+}
+
+.newPostForm {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: antiquewhite;
   width: 80%;
   padding: 15px;
+  margin: 0 auto;
 }
 
-.newPostForm > label{
+.newPostForm > label {
   width: 80%;
 }
 
-.formField{
-  width: 50%;
+.formButtonsContainer {
+  padding: 20px;
+}
+
+.formButton {
+  margin: 0 70px;
+  width: 120px;
+  padding: 5px;
+  font-weight: bold;
+  background-color: rgb(242, 211, 96);
+  border: 1px solid grey;
+}
+
+.addNewPostButton {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  width: 50px;
+  height: 50px;
+  background-color: rgb(242, 211, 96);
+  border: none;
+  border-radius: 50%;
+}
+
+.addNewPostButton:hover {
+  transform: rotateZ(100deg);
+  transition: all 1s ease-out;
+  background-color: blue;
+  color: yellow;
+}
+
+.post {
+  background-color: white;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  padding: 25px;
+  border: 1px solid gray;
+  border-radius: 3px;
+  -webkit-box-shadow: 9px 9px 18px -12px rgba(13, 13, 13, 1);
+  -moz-box-shadow: 9px 9px 18px -12px rgba(13, 13, 13, 1);
+  box-shadow: 9px 9px 18px -12px rgba(13, 13, 13, 1);
+}
+
+.postTitle {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 30px;
+  font-weight: bold;
+  text-align: center;
+  line-height: 1.7rem;
+}
+
+.postCreationDate {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 20px;
+  font-weight: bold;
+  margin: 15px 0;
+  color: red;
+}
+
+.postContent {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 20px;
+  line-height: 1.5rem;
 }
